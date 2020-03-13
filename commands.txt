@@ -3,3 +3,30 @@ git init
 git add .
 
 git commit -am "First command"
+
+# Create playground in github
+
+git remote add origin https://github.com/david26694/playground.git
+
+git push -u origin master
+
+# Go to folder
+
+mkdir one_folder
+
+cd one_folder
+
+# Initialize dvc
+
+dvc init --subdir
+
+# Push changes
+
+cd ../
+
+git add .
+
+git commit -am "Initialize dvc"
+
+git push -u origin master
+
